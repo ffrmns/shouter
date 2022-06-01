@@ -7,5 +7,7 @@
                  [org.clojure/java.jdbc "0.7.12"]
                  [org.postgresql/postgresql "42.3.6"]
                  [ring/ring-jetty-adapter "1.9.5"]
-                 [compojure "1.7.0"]]
+                 [compojure "1.7.0"]
+                 [ring/ring-defaults "0.3.3"]
+                 [hiccup "1.0.5"]]
   :repl-options {:init-ns shouter.core})
