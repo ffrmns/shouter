@@ -10,4 +10,11 @@
                  [compojure "1.7.0"]
                  [ring/ring-defaults "0.3.3"]
                  [hiccup "1.0.5"]]
-  :repl-options {:init-ns shouter.core})
+  :main ^:skip-aot shouter.web
+  :uberjar-name "shouter-standalone.jar"
+  :plugins [[lein-ring "0.12.6"]]
+  :ring {:handler shouter.web/application
+         :init shouter.models.migration/migrate}
+  :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                                  [ring/ring-mock "0.4.0"]]}
+             :uberjar {:aot :all}})
