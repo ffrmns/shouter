@@ -26,4 +26,4 @@ This is a clojure backend project that behave like social media post, following 
 
 ## Screenshots
 
-![App Screenshot](assets/immages/shouter-basic.png)
+![App Screenshot](assets/images/shouter-basic.png)
