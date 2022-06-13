@@ -27,3 +27,9 @@ This is a clojure backend project that behave like social media post, following 
 ## Screenshots
 
 ![App Screenshot](assets/images/shouter-basic.png)
+
+## License
+
+Copyright Aaron Bedra
+
+Distributed under the Eclipse Public License, the same as Clojure.
